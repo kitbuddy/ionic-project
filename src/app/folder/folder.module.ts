@@ -7,14 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { FolderPageRoutingModule } from './folder-routing.module';
 
 import { FolderPage } from './folder.page';
+import {ContactPageModule} from '../component/contact/contact.module';
+import {SliderImgPageModule} from '../component/slider-img/slider-img.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    FolderPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        FolderPageRoutingModule,
+        ContactPageModule,
+        SliderImgPageModule
+    ],
   declarations: [FolderPage]
 })
 export class FolderPageModule {}
